@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Home",
+        "icon": "bi bi-grid",
+        "url": "../../NewOrders/HtmlFiles/Customer.html"
+    },
+    {
+        "name": "Dashboard",
+        "icon": "bi bi-columns-gap",
+        "url": "index.html"
+    },
+    {
+        "name": "Parent",
+        "icon": "bi bi-arrow-90deg-left",
+        "url": "../../BranchToday/HtmlFiles/QrRaiseAll.html"
+    },
+    {
+        "name": "Today-Orders"
+    },
+    {
+        "name": "Orders",
+        "key": "Orders",
+        "icon": "bi bi-people-fill",
+        "url": "Orders.html"
+    },
+    {
+        "name": "IsQrRaised",
+        "key": "IsQrRaised",
+        "icon": "bi bi-people-fill",
+        "url": "IsQrRaised.html"
+    },
+    {
+        "name": "OrdersWithUsers",
+        "key": "ordersWithUsers",
+        "icon": "bi bi-people-fill",
+        "url": "ordersWithUsers.html"
+    }
+]

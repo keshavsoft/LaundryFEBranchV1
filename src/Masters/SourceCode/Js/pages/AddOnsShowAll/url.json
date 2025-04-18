@@ -1,0 +1,5 @@
+{
+    "StartRoute": "binV4",
+    "tableName": "MastersAddOns",
+    "url": "/Custom/Cleaning/Masters/V2/AddOns/DataOnly"
+}

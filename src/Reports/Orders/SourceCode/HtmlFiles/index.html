@@ -1,0 +1,77 @@
+{% extends 'src/Reports/Orders/SourceCode/Masters/simple.html' %}
+
+{% block content %}
+<section class="section dashboard">
+    <div class="row">
+        <div class="col">
+            <h1>All-Orders
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Left side columns -->
+        <div class="col-lg-12">
+            <div class="row">
+                <!-- Orders Card -->
+                <div class="col-md-6 col-xl-4 margin-bt">
+                    <a href="./Orders.html">
+                        <div class="card info-card sales-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Orders</h5>
+                                <div class="d-flex align-items-center">
+                                    <div
+                                        class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-people-fill"></i>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6>145</h6>
+                                        <span class="text-success small pt-1 fw-bold">12%</span>
+                                        <span class="text-muted small pt-2 ps-1">increase</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End Orders Card -->
+
+                <!-- UpComingDelivery Card -->
+                <div class="col-md-6 col-xl-4 margin-bt">
+                    <a href="./UpComingDelivery.html">
+                        <div class="card info-card sales-card">
+                            <div class="card-body">
+                                <h5 class="card-title">UpComing Delivery</h5>
+                                <div class="d-flex align-items-center">
+                                    <div
+                                        class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-people-fill"></i>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6>143</h6>
+                                        <span class="text-success small pt-1 fw-bold">8%</span>
+                                        <span class="text-muted small pt-2 ps-1">increase</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End UpComingDelivery Card -->
+            </div>
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col-12">
+            <div id="chart-profile-visit">
+                <img src="../assets/static/NiceAdmin/img/delivery.png" alt="Truck"
+                    style="object-fit:fill; height:0%; width: 60%; margin-left: 10.5rem" />
+            </div>
+        </div>
+    </div> -->
+</section>
+{% endblock %}
+
+{% block js %}
+<!-- <script type="module" src="../Js/pages/Index/StartFunc.js"></script> -->
+<script type="module" src="../Js/pages/Index/StartFunc.js"></script>
+{% endblock %}

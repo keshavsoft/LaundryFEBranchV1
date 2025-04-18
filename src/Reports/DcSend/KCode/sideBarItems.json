@@ -1,0 +1,50 @@
+[
+    {
+        "name": "ToFactory"
+    },
+    {
+        "name": "Home",
+        "icon": "bi bi-grid",
+        "url": "../../NewOrders/HtmlFiles/Customer.html"
+    },
+    {
+        "name": "DashBoard",
+        "icon": "bi bi-columns-gap",
+        "url": "index.html"
+    },
+    {
+        "name": "Parent",
+        "icon": "bi bi-arrow-90deg-left",
+        "url": "../../All-Orders/HtmlFiles/ReportsMenu.html"
+    },
+    {
+        "name": "ShowAll",
+        "url": "ToFactoryVouchers.html",
+        "icon": "bi bi-box-seam"
+    },
+    {
+        "name": "FactorySent",
+        "url": "FactorySent.html",
+        "icon": "bi bi-send"
+    },
+    {
+        "name": "FactoryScan",
+        "url": "SentAndFactoryScan.html",
+        "icon": "bi bi-clipboard-check"
+    },
+    {
+        "name": "EntryReturn",
+        "url": "EntryReturn.html",
+        "icon": "bi bi-box-arrow-up"
+    },
+    {
+        "name": "ProcessReturn",
+        "url": "ProcessReturn.html",
+        "icon": "bi bi-box-arrow-down-left"
+    },
+    {
+        "name": "CompletionReturn",
+        "url": "CompletionReturn.html",
+        "icon": "bi bi-bounding-box-circles"
+    }
+]

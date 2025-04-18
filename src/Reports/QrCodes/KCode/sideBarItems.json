@@ -1,0 +1,124 @@
+[
+    {
+        "name": "Home",
+        "icon": "bi bi-grid",
+        "url": "../../NewOrders/HtmlFiles/Customer.html"
+    },
+    {
+        "name": "Dashboard",
+        "icon": "bi bi-columns-gap",
+        "url": "index.html"
+    },
+    {
+        "name": "Parent",
+        "icon": "bi bi-arrow-90deg-left",
+        "url": "../../All-Orders/HtmlFiles/ReportsMenu.html"
+    },
+    {
+        "name": "ToFactory"
+    },
+   
+    {
+        "name": "All",
+        "key": "QrAll",
+        "icon": "bi bi-circle-fill",
+        "children": [
+            {
+                "name": "ShowAll",
+                "url": "QrAll.html",
+                "icon": "bi bi-circle"
+            },
+            {
+                "name": "Status",
+                "url": "QrAllStatus.html",
+                "icon": "bi bi-circle"
+            },
+            {
+                "name": "FactoryFilter",
+                "url": "QrAllFactoryFilter.html",
+                "icon": "bi bi-circle"
+            },
+            {
+                "name": "ItemsFilter",
+                "url": "QrAllitemsFilter.html",
+                "icon": "bi bi-circle"
+            },
+            {
+                "name": "OrderFilter",
+                "url": "QrAllOrder.html",
+                "icon": "bi bi-circle"
+            }
+        ]
+    },
+    {
+        "name": "InBranch",
+        "key": "QrIn",
+        "icon": "bi bi-circle-half",
+        "children": [
+            {
+                "name": "ShowAll",
+                "url": "QrInBranch.html",
+                "icon": "bi bi-circle"
+            },
+            {
+                "name": "Filter",
+                "url": "QrInBranchFilter.html",
+                "icon": "bi bi-circle"
+            }
+        ]
+    },
+    {
+        "name": "ToFactory",
+        "key": "QrTo",
+        "icon": "bi bi-circle",
+        "children": [
+            {
+                "name": "ShowAll",
+                "url": "QrToFactory.html",
+                "icon": "bi bi-circle"
+            },
+            {
+                "name": "Filter",
+                "url": "QrToFactoryFilter.html",
+                "icon": "bi bi-circle"
+            }
+        ]
+
+    },
+    {
+        "name": "FromFactory"
+    },
+    {
+        "name": "All-",
+        "key": "F_F",
+        "icon": "bi bi-list-ul",
+        "children": [
+          {
+            "name": "Show",
+            "url": "F_F_All.html"
+          }        
+        ]
+      },
+      {
+        "name": "Pending",
+        "key": "QRPending",
+        "icon": "bi bi-hourglass-split",
+        "children": [       
+          {
+            "name": "Filter",
+            "url": "QRPendingFilter.html"
+          }
+        ]
+      },
+      {
+        "name": "Scanned",
+        "key": "QRComplete",
+        "icon": "bi bi-check-circle",
+        "children": [      
+          {
+            "name": "Filter",
+            "url": "QRCompleteFilter.html"
+          }
+        ]
+    }
+]

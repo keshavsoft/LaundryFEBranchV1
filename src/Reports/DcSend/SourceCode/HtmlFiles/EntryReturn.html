@@ -1,0 +1,55 @@
+{% extends 'src/Reports/DcSend/SourceCode/Masters/simple.html' %}
+
+{% block content %}
+<div class="pagetitle">
+    <h1 class="d-block d-sm-none">DC Vouchers</h1>
+    <h1 class="d-none d-sm-block"><a id="RefreshBSTableId">DC Vouchers</a></h1>
+    <nav class="d-none d-sm-block">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Laundry/Branch/NewOrders/HtmlFiles/Customer.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="index.html">DcSend</a></li>
+            <li class="breadcrumb-item active">EntryReturn</li>
+        </ol>
+    </nav>
+</div>
+
+<div class="spinner-border" id="SpinnerId" role="status" style="display: none;">
+    <span class="visually-hidden">Loading...</span>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group row align-items-centerv">
+            <label for="FromDateInputId" class="col-md-4 col-form-label text-right">From Date</label>
+            <div class="col-md-8">
+                <input id="FromDateInputId" type="date" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group row align-items-center">
+            <label for="ToDateInputId" class="col-md-4 col-form-label text-right">To Date</label>
+            <div class="col-md-8">
+                <input id="ToDateInputId" type="date" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 d-flex align-items-center justify-content-end">
+        <button id="ShowButtonId" class="btn btn-success">Show</button>
+    </div>
+</div>
+<table id="table">
+    <thead>
+        <tr>
+            <th data-formatter="jFGlobalSerialColumn">#</th>
+        </tr>
+
+    </thead>
+</table>
+{% endblock %}
+
+{% block js %}
+
+
+<!-- <script type="module" src="../Js/pages/ToFactoryVouchers/StartFunc.js"></script> -->
+<script type="module" src="../Js/pages/EntryReturn/StartFunc.js"></script>
+{% endblock %}

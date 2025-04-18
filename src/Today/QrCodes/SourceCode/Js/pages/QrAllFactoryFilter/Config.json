@@ -1,0 +1,6 @@
+{
+    "routePath": "bin",
+    "tableName": "Openings",
+    "GetUrl":"Custom/Cleaning/Branch/Today/V1/OnlyQrs"
+
+}

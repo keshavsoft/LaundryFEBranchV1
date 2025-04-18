@@ -1,0 +1,36 @@
+[
+    {
+        "name": "Home",
+        "icon": "bi bi-grid",
+        "url": "../../../../../../laundry.html"
+    },
+    {
+        "name": "Parent",
+        "icon": "bi bi-arrow-90deg-left",
+        "url": "../../../Menu/HtmlFiles/"
+    },
+    {
+        "name": "QrCode",
+        "key": "Simple",
+        "icon": "bi bi-file-earmark",
+        "children": [
+            {
+                "name": "AsArray",
+                "url": "../../AsArray/HtmlFiles/",
+                "icon": "bi bi-list"
+            }
+        ]
+    },
+    {
+        "name": "AtStage",
+        "key": "",
+        "icon": "bi bi-bar-chart-steps",
+        "children": [
+            {
+                "name": "BranchFilter",
+                "url": "../../../QrCodeAtStage/BranchFilter/HtmlFiles/",
+                "icon": "bi bi-list"
+            }
+        ]
+    }
+]

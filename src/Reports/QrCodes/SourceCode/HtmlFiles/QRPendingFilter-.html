@@ -1,0 +1,72 @@
+{% extends 'src/Factory/FromFactory/EntryReturnQrCodes/SourceCode/Masters/simple.html' %}
+
+{% block content %}
+<div class="pagetitle">
+    <h1 class="d-block d-sm-none">Filter Items</h1>
+    <h1 class="d-none d-sm-block"><a id="RefreshBSTableId">Filter Items</a></h1>
+    <nav class="d-none d-sm-block">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="">Laundry</a></li>
+            <li class="breadcrumb-item">Branch</li>
+            <li class="breadcrumb-item">Factory</li>
+            <li class="breadcrumb-item">FromFactory</li>
+            <li class="breadcrumb-item">EntryReturnQrCodes</li>
+            <li class="breadcrumb-item">Pending</li>
+            <li class="breadcrumb-item active">Filter</li>
+        </ol>
+    </nav>
+</div>
+<div class="page-heading">
+    <!--  Inverse table start -->
+
+    <section class="section">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group row align-items-centerv">
+                    <label for="FromDateInputId" class="col-md-4 col-form-label text-right">From Date</label>
+                    <div class="col-md-8">
+                        <input id="FromDateInputId" type="date" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group row align-items-center">
+                    <label for="ToDateInputId" class="col-md-4 col-form-label text-right">To Date</label>
+                    <div class="col-md-8">
+                        <input id="ToDateInputId" type="date" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-center justify-content-end">
+                <button class="ShowButtonId btn btn-success" id="ShowId">Show</button>
+            </div>
+        </div>
+        <div id="toolbar">
+            <a id="RefreshATagId" href="#" class="btn btn-outline-gray-600 btn-primary d-inline-flex ShowButtonId">
+                <i class="bi bi-bootstrap-reboot me-2"></i> Refresh
+            </a>
+            <div class="spinner-border" id="SpinnerId" role="status" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <table class="table mb-0" id="table">
+                <thead>
+                    <tr>
+                        <th data-formatter="jFGlobalSerialColumn">#</th>
+                    </tr>
+
+                </thead>
+            </table>
+    </section>
+    <!-- Inverse table end -->
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.23.5/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
+<!-- <script type="module" src="../Js/pages/QRPendingFilter/StartFunc.js"></script> -->
+<script type="module" src="../Js/pages/QRPendingFilter/StartFunc.js"></script>
+
+
+{% endblock %}

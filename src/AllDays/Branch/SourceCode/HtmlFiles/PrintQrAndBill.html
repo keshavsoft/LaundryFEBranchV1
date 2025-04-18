@@ -1,0 +1,124 @@
+{% extends 'src/AllDays/Branch/SourceCode/Masters/simple.html' %}
+
+{% block content %}
+<div class="pagetitle">
+    <h1 class="d-block d-sm-none">QrPrint</h1>
+    <h1 class="d-none d-sm-block RefreshBSTableClass"><a id="RefreshBSTableId">QrPrint</a></h1>
+    <nav class="d-none d-sm-block">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Laundry/Branch/NewOrders/HtmlFiles/Customer.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="../../BranchToday/HtmlFiles/index.html">All</a></li>
+            <li class="breadcrumb-item">Print</li>
+            <li class="breadcrumb-item active">QR & Bill</li>
+        </ol>
+    </nav>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group row align-items-centerv">
+            <label for="FromDateInputId" class="col-md-4 col-form-label text-right">From Date</label>
+            <div class="col-md-8">
+                <input id="FromDateInputId" type="date" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group row align-items-center">
+            <label for="ToDateInputId" class="col-md-4 col-form-label text-right">To Date</label>
+            <div class="col-md-8">
+                <input id="ToDateInputId" type="date" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 d-flex align-items-center justify-content-end">
+        <button class="btn btn-success ShowButtonId">Show</button>
+    </div>
+</div>
+<div id="toolbar">
+    <a id="RefreshATagId" href="#"
+        class="btn btn-outline-gray-600 btn-primary d-inline-flex align-items-center RefreshBSTableId">
+        <i class="bi bi-bootstrap-reboot me-2"></i> Refresh
+    </a>
+
+    <button id="LoadingButtonId" class="btn btn-primary d-none ms-2" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+        <span role="status">Loading...</span>
+    </button>
+</div>
+<div class="spinner-border" id="SpinnerId" role="status" style="display: none;">
+    <span class="visually-hidden">Loading...</span>
+</div>
+
+<table id="table">
+</table>
+
+<template id="TemplateForQrCodePrint">
+    <div style="width: 100%; height: 288px;">
+        <div class="row">
+            <div style="text-align: center;font-weight: 500;font-size: larger; " class="col ">
+                <label class="BranchClass"></label>-<label class="PkClass"></label>
+            </div>
+        </div>
+        <div style="text-align: center;" class="col">
+            <canvas id="CanvasId" width="1" height="1" style="border:1px solid #fff;visibility:hidden"></canvas>
+        </div>
+
+
+        <div class="row">
+            <div style="text-align: center; " class="col ">
+                <label style="font-size: x-large; font-weight: 500;" class="QrCodeClass"></label>-<label
+                    style="font-size: x-large;" class="OrderNumberClass"></label>
+            </div>
+        </div>
+        <div class="row">
+            <div style="text-align: center;font-weight: 500;" class="col ItemNameClass">
+                {{ItemName}}.{{Pcs}}
+            </div>
+        </div>
+        <div class="row">
+            <div style="text-align: center; font-weight: 500;" class="col ItemSerialClass">
+                {{ItemSerial}}.{{Pcs}}
+            </div>
+        </div>
+
+        <div class="row" style="width: 150px; margin: 0px auto;">
+            <div style="text-align: center; font-weight: 300;" class="col AddOnDataAsStringClass">
+                {{AddOnDataAsString}}
+            </div>
+        </div>
+
+        <div class="col" style="text-align: center; font-weight: 500; font-size: 12px;">
+            <label class=" DateTimeClass"></label> @ <label class=" OrderDateClass"></label>
+
+        </div>
+    </div>
+</template>
+{% endblock %}
+
+{% block js %}
+<div class="modal fade" id="ModalForQrCode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary" onclick="printJS('ModalBody', 'html')">Print QrCodes</button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="ModalBody">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="printJS('ModalBody', 'html')">Print</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="../assets/static/vendor/bwip-js-min.js"></script>
+<script src="../assets/static/vendor/print.min.js"></script>
+
+<!-- <script type="module" src="../Js/pages/PrintQrAndBill/entryFile.js"></script> -->
+<script type="module" src="../Js/pages/PrintQrAndBill/entryFile.js"></script>
+{% endblock %}

@@ -1,0 +1,77 @@
+[
+    {
+        "name": "Home",
+        "icon": "bi bi-grid",
+        "url": "/laundry.html"
+    },
+    {
+        "name": "Parent",
+        "icon": "bi bi-arrow-90deg-left",
+        "url":"../../../CommonConfig/Menu/HtmlFiles/"
+    },
+    {
+        "name": "Parent-QrCodes",
+        "icon": "bi bi-ui-checks",
+        "children": [
+            {
+                "name": "AsArray",
+                "url": "../../AsArray/HtmlFiles/",
+                "icon": "bi bi-list"
+            },
+            {
+                "name": "BranchWise",
+                "url": "../../BranchWise/HtmlFiles/",
+                "icon": "bi bi-list"
+            }
+
+        ]
+    },
+    {
+        "name": "InGenerate",
+        "key": "Generate",
+        "icon": "bi bi-arrow-right-circle",
+        "children": [
+            {
+                "name": "ShowAll",
+                "url": "Generate.html",
+                "icon": "bi bi-arrow-right"
+            }
+        ]
+    },
+    {
+        "name": "InBranch",
+        "key": "In",
+        "icon": "bi bi-building",
+        "children": [
+            {
+                "name": "ShowAll",
+                "url": "InBranch.html",
+                "icon": "bi bi-building"
+            }
+        ]
+    },
+    {
+        "name": "InWashing",
+        "key": "Washing",
+        "icon": "bi bi-droplet-half",
+        "children": [
+            {
+                "name": "ShowAll",
+                "url": "Washing.html",
+                "icon": "bi bi-droplet-half"
+            }
+        ]
+    },
+    {
+        "name": "InPressing",
+        "key": "Pressing",
+        "icon": "bi bi-align-bottom",
+        "children": [
+            {
+                "name": "ShowAll",
+                "url": "Pressing.html",
+                "icon": "bi bi-gear"
+            }
+        ]
+    }
+]

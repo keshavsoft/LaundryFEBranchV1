@@ -1,0 +1,11 @@
+{
+    "FetchUrl": "/binV4/MastersCustomers/Create",
+    "PostFetch": "/Custom/Cleaning/Branch/Order/NewOrderV2",
+    "SaveButton": {
+        "NewOrder": {
+            "500Status": {
+                "RedirectUrl": "/Laundry/Branch/NewOrders/HtmlFiles/Customer.html"
+            }
+        }
+    }
+}

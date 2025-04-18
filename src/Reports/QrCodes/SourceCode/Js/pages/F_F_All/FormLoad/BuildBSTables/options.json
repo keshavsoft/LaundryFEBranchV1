@@ -1,0 +1,59 @@
+{
+    "toolbar": "#toolbar",
+    "idfield": "pk",
+    "showFooter": "true",
+    "search": true,
+    "searchHighlight": true,
+    "data": [],
+    "onClickRow": "",
+    "responseHandler": "",
+    "queryParams": "",
+    "rowStyle": "rowStyle",
+    "filterControl": "true",
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",
+    "pagination": "true",
+    "columns": [
+        {
+            "field": "KS-Serial",
+            "title": "#",
+            "formatter": ""
+        },
+        {
+            "field": "OrderNo",
+            "title": "OrderNo",
+            "filterControl": "select"
+        },
+        {
+            "title": "QrCode",
+            "field": "QrCode",
+            "filterControl": "select"
+        },
+        {
+            "field": "ItemName",
+            "title": "ItemName",
+            "filterControl": "select"
+        },
+        {
+            "field": "Rate",
+            "title": "Rate",
+            "filterControl": "select"
+        },
+        {
+            "field": "DCDate",
+            "title": "DCDate"
+        },
+        {
+            "field": "DeliveryDateTime",
+            "title": "DeliveryDate"
+        },
+        {
+            "field": "TimeSpan",
+            "title": "TimeSpan"
+        },
+        {
+            "field": "ScanStatus",
+            "title": "ScanStatus"
+        }
+    ]
+}
