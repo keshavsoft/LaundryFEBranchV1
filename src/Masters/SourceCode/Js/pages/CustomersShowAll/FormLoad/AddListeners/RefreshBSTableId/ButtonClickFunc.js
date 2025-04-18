@@ -4,7 +4,7 @@ import { StartFunc as StartFuncAfterFetch } from "./AfterFetch/EntryFile.js";
 
 let StartFunc = async () => {
     try {
-        let [a] = await Promise.all([Receipts()]);
+        let a = Receipts();
 
         jVarGlobalPresentViewData = [...a];
 

@@ -1,5 +1,3 @@
-import JsonConfig from "../../../Config.json" with{type: "json"};
-
 let StartFunc = async () => {
     let jvarLocalCustomerNameInputId = document.getElementById("CustomerNameInputId");
     if (jvarLocalCustomerNameInputId.value === "") {
@@ -24,7 +22,7 @@ const LocalFetchFunc = async () => {
     let jvarLocalCustomerNameInputId = document.getElementById("CustomerNameInputId").value;
     let jVarLocalMobileValue = jvarLocalCustomerNameInputId.split(":")[1]
 
-    let jVarLocalfetchUrl = `/${JsonConfig.routePath}/MastersCustomers/Show/Filter/Mobile/${jVarLocalMobileValue}`
+    let jVarLocalfetchUrl = `/Custom/Cleaning/V1/Masters/Customers/Get/Filter/Mobile/${jVarLocalMobileValue}`
     let response = await fetch(jVarLocalfetchUrl);
 
     if (response.status === 500) {

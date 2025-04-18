@@ -1,0 +1,58 @@
+[
+    {
+        "name": "DCs"
+    },
+    {
+        "name": "Home",
+        "icon": "bi bi-grid",
+        "url": "../../NewOrders/HtmlFiles/Customer.html"
+    },
+    {
+        "name": "DashBoard",
+        "icon": "bi bi-columns-gap",
+        "url": "index.html"
+    },
+    {
+        "name": "Parent",
+        "icon": "bi bi-arrow-90deg-left",
+        "url": "../../All-Orders/HtmlFiles/ReportsMenu.html"
+    },
+    {
+        "name": "ShowAll",
+        "url": "ToFactoryDcAll.html",
+        "icon": "bi bi-box-seam"
+    },
+    {
+        "name": "FactoryPending",
+        "url": "ToFactoryDcPendings.html",
+        "icon": "bi bi-send"
+    },
+    {
+        "name": "FactorySent",
+        "url": "ToFactoryDcSent.html",
+        "icon": "bi bi-send"
+    },
+    {
+        "name": "FactoryScan",
+        "url": "ToFactoryScan.html",
+        "icon": "bi bi-clipboard-check"
+    },
+    {
+        "name": "From Factory"
+    },
+    {
+        "name": "EntryReturn",
+        "url": "F_F_DcEntry.html",
+        "icon": "bi bi-box-arrow-up"
+    },
+    {
+        "name": "ProcessReturn",
+        "url": "F_F_DcProcess.html",
+        "icon": "bi bi-box-arrow-down-left"
+    },
+    {
+        "name": "Completion Dcs",
+        "url": "F_F_DcCompletion.html",
+        "icon": "bi bi-bounding-box-circles"
+    }
+]

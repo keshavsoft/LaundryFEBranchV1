@@ -2,7 +2,7 @@
     "routePath": "binV4",
     "folderName": "Masters",
     "tableName": "CustomerNames",
-    "TodayUrl":"Custom/Cleaning/Branch/Order/NewOrderV1/TodayCustomerFilter",
+    "TodayUrl":"Custom/Cleaning/V1/Branch/Order/NewOrder/TodayCustomerFilter",
     "localStorageKeys": {
         "OrderKey": "CustomerNames",
         "ItemNamesKey": "ItemNames",
@@ -12,7 +12,7 @@
         "NewOrderButtonId": {
             "PostFetch1": "/Custom/Cleaning/Branch/Order/NewOrderV1/InSertOrder",
             "PostFetch2": "/Custom/Cleaning/Branch/Order/NewOrderV1",
-            "PostFetch": "/Custom/Cleaning/Branch/Order/NewOrderV2",
+            "PostFetch": "/Custom/Cleaning/V1/Branch/Order/NewOrder",
 
             "RedirectUrl": {
                 "500Status": "/Laundry/Branch/NewOrders/HtmlFiles/AddItemsWBtns.html",
