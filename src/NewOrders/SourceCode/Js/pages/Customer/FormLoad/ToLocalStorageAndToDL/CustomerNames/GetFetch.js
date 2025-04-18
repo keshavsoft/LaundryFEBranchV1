@@ -1,10 +1,8 @@
 import ConfigJson from '../../../Config.json' with {type: 'json'};
 
 let StartFunc = async () => {
-    let jVarLocalSubRoute = ConfigJson.routePath;
     let jVarLocalLocalStorageKey = ConfigJson.localStorageKeys.OrderKey;
-
-    let jVarLocalFetchUrl = `/Custom/Cleaning/Masters/V2/Customers/DataOnly`;
+    let jVarLocalFetchUrl = `/Custom/Cleaning/V1/Masters/Customers/ShowAll`;
 
     let jVarLocalFromFetch = await fetch(jVarLocalFetchUrl);
     let jVarLocalFromFetchJson = await jVarLocalFromFetch.json();

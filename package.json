@@ -32,7 +32,7 @@
     "Payments": "vite build --config src/Reports/Payments/vite.config.js",
     "QrCodes": "vite build --config src/Reports/QrCodes/vite.config.js",
     "AllDays": "vite build --config src/AllDays/Branch/vite.config.js",
-    "All-Dcs": "vite build --config src/Reports/DcSend/vite.config.js"
+    "All-Dcs": "vite build --config src/Reports/Dcs/vite.config.js"
 
   },
   "author": "",
