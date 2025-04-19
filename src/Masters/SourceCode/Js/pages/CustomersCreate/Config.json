@@ -1,4 +1,4 @@
 {
-    "routePath": "binV4",
+    "routePath": "/Custom/Cleaning/V1/Masters/Customers/Post",
     "tableName":"MastersCustomers"
 }
