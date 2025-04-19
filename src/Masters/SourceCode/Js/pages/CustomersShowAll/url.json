@@ -1,4 +1,4 @@
 {
     "StartRoute": "binV4",
-    "url":"/Custom/Cleaning/Masters/V2/Customers/DataOnly"
+    "url":"/Custom/Cleaning/V1/Masters/Customers/Get/DataOnly"
 }

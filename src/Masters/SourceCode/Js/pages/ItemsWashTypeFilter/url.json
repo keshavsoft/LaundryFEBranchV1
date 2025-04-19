@@ -1,5 +1,5 @@
 {
     "StartRoute": "binV4",
     "tableName":"MastersItems",
-    "url":"/Custom/Cleaning/Masters/V2/ItemNames/DataOnly"
+    "url":"/Custom/Cleaning/V1/Masters/ItemNames/Get/DataOnly"
 }
