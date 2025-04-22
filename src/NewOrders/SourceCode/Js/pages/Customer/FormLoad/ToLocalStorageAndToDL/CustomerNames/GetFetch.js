@@ -6,7 +6,6 @@ let StartFunc = async () => {
 
     let jVarLocalFromFetch = await fetch(jVarLocalFetchUrl);
     let jVarLocalFromFetchJson = await jVarLocalFromFetch.json();
-    console.log(jVarLocalFromFetchJson);
 
     let getsort = jVarLocalFromFetchJson.sort((a, b) => a.CustomerName - b.CustomerName);
 

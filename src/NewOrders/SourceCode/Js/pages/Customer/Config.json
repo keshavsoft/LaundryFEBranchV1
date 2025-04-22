@@ -26,6 +26,9 @@
                 "500Status": "/Laundry/Branch/NewOrders/HtmlFiles/AddItemsWBtns.html",
                 "200Status": "AddItemsTotalRight.html"
             }
+        },
+        "OrderesTabs":{
+            "TodayUrl":"Custom/Cleaning/Branch/Today/V1/OnlyOrders"
         }
     }
 }
