@@ -49,10 +49,9 @@
             "formatter":""
         },
         {
-            "field": "DateTime",
-            "title": "Time Span",
-            "formatter": "TimeDiff",
-            "class": "d-none d-sm-table-cell"
+            "field": "IsQrCodesRaised",
+            "title": "Qrcodes"
+            
         },
         {
             "title": "Opts.",
