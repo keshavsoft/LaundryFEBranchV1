@@ -16,6 +16,8 @@ const StartFunc = () => {
         LocalOption.innerHTML = `${element.CustomerName}:${element.Mobile}`
         jVatLocalCustomersDataListId.appendChild(LocalOption)
     });
+
+    document.getElementById("TodayOrderRefreshButtonId").click();
 };
 
 export { StartFunc };

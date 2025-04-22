@@ -121,6 +121,9 @@
                         <button class="nav-link active" id="nav-Today-tabContent" data-bs-toggle="tab"
                             data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
                             aria-selected="true">Today</button>
+                            <button class="nav-link" id="nav-CToday-tabContent" data-bs-toggle="tab"
+                            data-bs-target="#nav-CToday" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">C Today</button>
                         <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
                             type="button" role="tab" aria-controls="nav-profile"
                             aria-selected="false">Yesterday</button>
@@ -136,6 +139,16 @@
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <div class="col-auto m-2">
                             <h4>Today </h4>
+                            <button class="btn" id="TodayOrderRefreshButtonId" href="#">
+                                <i class="bi bi-arrow-clockwise"></i>
+                            </button>
+                        </div>
+                        <table id="TodayOrdertable">
+                        </table>
+                    </div>
+                    <div class="tab-pane fade show" id="nav-CToday" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="col-auto m-2">
+                            <h4>C Today </h4>
                         </div>
                         <table id="table">
                         </table>

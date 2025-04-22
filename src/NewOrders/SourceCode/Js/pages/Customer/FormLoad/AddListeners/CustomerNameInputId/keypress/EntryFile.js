@@ -1,4 +1,4 @@
-import { StartFunc as StartFuncFuncToRun } from "../../CustomerNameSearchButtonId/ButtonClickFunc.js";
+import { StartFunc as StartFuncFuncToRun } from "../../NavTabs/TodayTable/ButtonClickFunc.js";
 
 let StartFunc = () => {
     let jVarLocalCustomerNameInputId = "CustomerNameInputId";

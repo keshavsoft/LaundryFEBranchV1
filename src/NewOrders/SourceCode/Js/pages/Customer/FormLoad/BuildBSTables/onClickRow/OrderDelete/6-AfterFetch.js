@@ -1,4 +1,4 @@
-import { StartFunc as StartFuncButtonClickFunc } from "../../../AddListeners/CustomerNameSearchButtonId/ButtonClickFunc.js";
+import { StartFunc as StartFuncButtonClickFunc } from "../../../AddListeners/NavTabs/TodayTable/ButtonClickFunc.js";
 
 let StartFunc = async ({ inFromFetch }) => {
     if (inFromFetch.KTF === false) {
