@@ -11,6 +11,7 @@ import { StartFunc as StartFuncColumnLocation } from "./ColumnLocation/entryFile
 import { StartFunc as StartFuncColumnDeliveryDateTime } from "./ColumnDeliveryDateTime/entryFile.js";
 import { StartFunc as StartFuncColumnItemService } from "./ColumnItemService/entryFile.js";
 import { StartFunc as ColumnIsSettled } from "./ColumnIsSettled/entryFile.js";
+import { StartFunc as ColumnIsIsQrCodesRaised } from "./ColumnIsIsQrCodesRaised/entryFile.js";
 
 let StartFunc = ({ inColumns }) => {
     let LocalColumns = inColumns;
@@ -29,6 +30,7 @@ let StartFunc = ({ inColumns }) => {
     let LocalColumnDeliveryDateTime = LocalColumns.find(element => element.field === "DeliveryDateTime");
     let LocalColumnItemService = LocalColumns.find(element => element.field === "ItemService");
     let LocalColumnIsSettled = LocalColumns.find(element => element.field === "IsSettled");
+    let LocalColumnIsQrCodesRaised = LocalColumns.find(element => element.field === "IsQrCodesRaised");
 
     if (LocalColumnOperateFine === undefined === false) {
         ColumnOperate({ inFindColumn: LocalColumnOperateFine });
@@ -79,6 +81,10 @@ let StartFunc = ({ inColumns }) => {
 
     if (LocalColumnIsSettled === undefined === false) {
         ColumnIsSettled({ inFindColumn: LocalColumnIsSettled });
+    };
+
+    if (LocalColumnIsQrCodesRaised === undefined === false) {
+        ColumnIsIsQrCodesRaised({ inFindColumn: LocalColumnIsQrCodesRaised });
     };
 };
 
