@@ -50,7 +50,7 @@
         },
         {
             "field": "IsQrCodesRaised",
-            "title": "Qrcodes"
+            "title": "IsQrRaised"
             
         },
         {
