@@ -10,28 +10,32 @@
     "columns": [
         {
             "field": "pk",
-            "title": "Order#"
+            "title": "Order#",
+            "align":"center"
             
         },
         {
             "field": "CustomerData.CustomerName",
-            "title": "C Name"
-            
+            "title": "C Name",
+            "align":"center"
         },
         {
             "field": "CustomerData.Mobile",
-            "title": "C Mobile"
+            "title": "C Mobile",
+            "align":"center"
             
         },
         {
             "field": "OrderData.Currentdateandtime",
             "title": "Date",
+            "align":"center",
             "formatter": "LocalDate",
             "visible": false
         },
         {
             "field": "AggValues.ItemDetails",
             "title": "Items",
+            "align":"center",
             "footerFormatter": "ItemsFormatter",
             "class": "d-none d-sm-table-cell"
 
@@ -40,17 +44,20 @@
             "field": "AggValues.SettlementAmount",
             "title": "Settlement",
             "footerFormatter": "priceFormatter",
-            "align": "right",
+            "align": "center",
             "class": "d-none d-sm-table-cell"
         },
         {
             "field": "IsSettled",
             "title": "IsSettled",
+            "align":"center",
             "formatter":""
         },
         {
             "field": "IsQrCodesRaised",
-            "title": "IsQrRaised"
+            "title": "IsQrRaised",
+            "align":"center",
+            "formatter":""
             
         },
         {
